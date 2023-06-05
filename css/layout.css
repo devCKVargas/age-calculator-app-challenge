@@ -1,0 +1,93 @@
+html,
+body {
+    height: 100%
+}
+
+*,
+*::before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    height: 100svh;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+/*? Container ========== */
+.container {
+    max-width: 25rem;
+    margin-inline: auto;
+    padding: 2rem 1.5rem;
+}
+
+@media (min-width: 43.75rem) {
+    .container {
+        width: 40rem;
+        max-width: 43rem;
+        padding: 3rem 2rem;
+    }
+}
+
+/*? Mobile layout ========== */
+.main--wrapper {
+    display: grid;
+    gap: 1rem;
+    position: relative;
+}
+
+.main--input {
+    display: grid;
+    gap: 1rem;
+    place-items: start;
+}
+
+.form--wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.form--wrapper>* {
+    display: grid;
+}
+
+.form--wrapper label {
+    margin-bottom: 0.5rem;
+}
+
+.btn-container {
+    grid-column: 1/ -1;
+}
+
+.btn-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*? Tablet layout ========== */
+@media (min-width: 43.75rem) {
+    .main--input {
+        place-items: unset;
+    }
+
+    .form--wrapper {
+        -moz-column-gap: 0;
+        column-gap: 0;
+    }
+
+    .form--wrapper input {
+        max-width: 85%;
+    }
+
+    .btn-container {
+        justify-content: flex-end;
+    }
+}

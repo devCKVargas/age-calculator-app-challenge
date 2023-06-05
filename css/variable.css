@@ -1,0 +1,21 @@
+:root {
+    --clr-accent-primary: hsl(259, 100%, 65%);
+    --clr-accent-secondary: hsl(0, 100%, 67%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-neutral-100: hsl(0, 0%, 94%);
+    --clr-neutral-200: hsl(0, 0%, 86%);
+    --clr-neutral-300: hsl(0, 1%, 44%);
+    --clr-neutral-400: hsl(0, 0%, 8%);
+    --ff-primary: "Poppins", sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-bolder: 800;
+    --size-xxsm: 0.25rem;
+    --size-xsm: 0.5rem;
+    --size-sm: 0.75rem;
+    --size-normal: 1rem;
+    --size-md: 1.25rem;
+    --size-lg: 1.5rem;
+    --size-xl: 2rem;
+    --size-xxl: 3rem;
+}

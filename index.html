@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris King Vargas">
+    <meta name="description" content="This is my solution for age calculator challenge on Frontend Mentor">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <!-- css -->
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- javascript -->
+    <script defer src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <main>
+        <section class="main--wrapper">
+          <section class="main--input">
+            <form class="form--wrapper">
+              <div class="form--group">
+                <label for="">Day</label>
+                <input type="number" placeholder="DD" id="day" name="day" value="31" required>
+                <div class="warning warning-day">
+                  <!-- <p>Must be a valid ----</p> -->
+                </div>
+              </div>
+              <div class="form--group">
+                <label for="">Month</label>
+                <input type="number" placeholder="MM" id="month" name="month" value="02" required>
+                <div class="warning warning-day">
+                  <!-- <p>Must be a valid ----</p> -->
+                </div>
+              </div>
+              <div class="form--group">
+                <label for="">Year</label>
+                <input type="number" placeholder="YYYY" id="year" name="year" value="2023" required>
+                <div class="warning warning-year">
+                  <!-- <p>Must be a valid ----</p> -->
+                </div>
+              </div>
+
+              <div class="form--group btn-container">
+                <hr class="btn-line">
+                <button class="btn" id="calculate" title="age-calculator">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                    <g fill="none" stroke="#FFF" stroke-width="2">
+                      <path
+                        d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="main--output">
+            <div><span class="numbers" id="years">--</span> years</div>
+            <div><span class="numbers" id="months">--</span> months</div>
+            <div><span class="numbers" id="days">----</span> days</div>
+          </section>
+        </section>
+      </main>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q/hub"
+          target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/devCKVargas/" target="_blank">devCKVargas</a>.
+      </footer>
+    </div>
+
+  </body>
+
+</html>
