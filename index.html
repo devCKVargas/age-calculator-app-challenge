@@ -27,27 +27,24 @@
       <main>
         <section class="main--wrapper">
           <section class="main--input">
-            <form class="form--wrapper">
+            <form class="form--wrapper" onsubmit="return checkError()" novalidate>
               <div class="form--group">
                 <label for="">Day</label>
-                <input type="number" placeholder="DD" id="day" name="day" value="31" required>
-                <div class="warning warning-day">
-                  <!-- <p>Must be a valid ----</p> -->
-                </div>
+                <input type="number" placeholder="DD" id="day" name="day" value="30" required min="1" max="31"
+                  max-length="2">
+                <div id="error-day" class="error-message"></div>
               </div>
               <div class="form--group">
                 <label for="">Month</label>
-                <input type="number" placeholder="MM" id="month" name="month" value="02" required>
-                <div class="warning warning-day">
-                  <!-- <p>Must be a valid ----</p> -->
-                </div>
+                <input type="number" placeholder="MM" id="month" name="month" value="12" required min="1" max="12"
+                  max-length="2">
+                <div id="error-month" class="error-message"></div>
               </div>
               <div class="form--group">
                 <label for="">Year</label>
-                <input type="number" placeholder="YYYY" id="year" name="year" value="2023" required>
-                <div class="warning warning-year">
-                  <!-- <p>Must be a valid ----</p> -->
-                </div>
+                <input type="number" placeholder="YYYY" id="year" name="year" value="2024" required min="1"
+                  max-length="4">
+                <div id="error-year" class="error-message"></div>
               </div>
 
               <div class="form--group btn-container">
@@ -78,5 +75,7 @@
     </div>
 
   </body>
+
+
 
 </html>

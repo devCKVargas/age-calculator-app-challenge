@@ -42,6 +42,7 @@ body {
     font-size: clamp(0.5rem, 1.65rem, 4.5vw);
     font-weight: var(--fw-bold);
     padding: 0.625rem;
+    margin-bottom: .375rem;
 }
 
 .form--wrapper input:is(:focus, :focus-visible, :-moz-focusring) {
@@ -86,10 +87,9 @@ hr {
     width: 100%;
 }
 
-.warning {
+.error-message {
     color: red;
     font: italic 400 .85rem 'Poppins';
-    margin-top: .5rem;
 }
 
 /*? bottom section ==========  */
